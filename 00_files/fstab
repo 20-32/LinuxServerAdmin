@@ -1,0 +1,32 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Mon Apr 13 03:11:10 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/cs-root     /                       xfs     defaults        0 0
+UUID=0b3431f1-83ad-4e42-844d-be99810b241a /boot                   xfs     defaults        0 0
+/dev/mapper/cs-home     /home                   xfs     defaults        0 0
+/dev/mapper/cs-swap     none                    swap    defaults        0 0
+#/dev/sdb1 /testmount 	ext4	defaults	1 2
+#/dev/VG1/LV1  /lvm1  ext4  defaults  0 2
+#/dev/VG1/LV2  /lvm2  ext4  defaults  0 2
+#/dev/VG2/LV3  /lvm3  ext4  defaults  0 2
+#/dev/VG2/LV4  /lvm4  ext4  defaults  0 2
+
+#
+# (5) SWAP Configuration
+#
+#/swap/swapfile	none	swap	defaults	0 0
+
+#/dev/nvme0n1p1	/testmount	xfs	 defaults	0 2
+
+#
+# (2) SAMBA(CIFS) Mount Test
+#
+#//192.168.10.202/samba_share     /mnt/server     cifs    credentials=/root/cred                0 0
